@@ -1,0 +1,26 @@
+@import './variables';
+
+@mixin footer{
+    
+    ul {
+        list-style-type: none;
+        
+    h3 {
+        width: 80%;
+        margin: auto;
+        height: 6vh;
+        font-size: 1.5em;
+        color: $color_footer;
+    }
+        li {
+            width: 80%;
+            margin: auto;
+            height: 6vh;
+            a {
+
+                color: $color_footer;
+                text-decoration: none;
+            }
+        }
+    }
+}

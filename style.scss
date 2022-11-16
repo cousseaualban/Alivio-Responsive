@@ -1,0 +1,464 @@
+@import './sass/variables';
+@import './sass/header';
+@import './sass/footer';
+
+body {
+    header {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include header;
+        }
+
+    // Section 1 
+    #section1 {
+        width: 100%;
+        height: 80vh;
+        background-image: url('./images/hero.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+
+        .manage{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            // Format Tablette
+            @media (max-width: 992px){
+                width: 80%;
+            }
+            
+            // Format mobile
+            @media (max-width: 768px){
+                width: 90%;
+            }
+
+            h2{
+                width: 20%;
+                font-size: 2.5em;
+                color: #01996D;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    font-size: 2em;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 30%;
+                    font-size: 2em;
+                }
+
+            }
+            p{
+                width: 30%;
+                font-size: 1.25em;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    font-size: 1em;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 50%;
+                }
+            }
+    
+            li {
+                list-style-type: none;
+                a {
+                    background-color: rgb(0, 107, 87);
+                    text-decoration: none;
+                    font-size: 1.25em;              
+                    
+                }
+            }
+
+            button{
+                width: 20%;
+                height: 5vh;
+                color: white;
+                background-color: $background_button;
+            }
+        }
+    }
+
+    // Section 2
+    #section2 {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .work{
+            width: 60%;
+
+            // Format Tablette
+            @media (max-width: 992px){
+                width: 40%;
+            }
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 60%;
+            }
+
+            h3 {
+                width: 30%;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    font-size: 1.25em;
+                }
+            }
+
+            h2 {
+                width: 60%;
+                color: #01996D;
+                font-size: 2.5em;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    font-size: 2em;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    font-size: 1.75em;
+                }
+            }
+        }
+
+        p{
+            width: 40%;
+            margin: auto;
+
+            // Format Tablette
+            @media (max-width: 992px){
+                width: 60%;
+            }
+
+        }
+
+    }
+
+    // Section 3
+        #section3 {
+            width: 87%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            article {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 50%;
+                }
+
+                img {
+                    width: 80%;
+                    height: auto;
+
+                    // Format mobile
+                    @media (max-width: 768px){
+                        width: 80%;
+                        height: 50vh;
+                    }
+                    
+                }
+                p{
+                    width: 80%;
+
+                }
+            
+            .chiffreStyle {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+    
+                .chiffre {
+                    position: relative;
+                    height: 100%;
+                    left: 10%;
+                    font-family: 'Georgia';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 150px;
+                    line-height: 150%;
+                    /* identical to box height, or 225px */
+                    text-align: center;
+                    color: rgba(1, 153, 109, 0.2);
+
+                    // Format Tablette
+                    @media (max-width: 992px){
+                        font-size: 100px;
+                        top: 10%;
+                    }
+                }
+    
+                .titreStyle {
+                    position: relative;
+                    height: 100%;
+                    top: 61%;
+                    font-family: 'Georgia';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 150%;
+                    /* identical to box height, or 45px */
+                    text-align: center;
+                    color: #000000;
+                    
+                    // Format Tablette
+                    @media (max-width: 992px){
+                        font-size: 20px;
+                        right: 10%;
+                    }
+
+                    // Format mobile
+                    @media (max-width: 768px){
+                        font-size: 18px;
+                    }
+                }
+    
+            }
+        }
+    
+    }
+
+    // Section 4
+    #section4 {
+        width: 100%;
+        height: 60vh;
+        background-color: $background_green;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center; 
+
+        .video{
+            width: 40%;
+            margin: auto;
+            h2 {
+                width: 60%;
+                color: white;
+                font-size: 2.5em;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    font-size: 2em;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 80%;
+                    font-size: 1.5em;
+                }
+            }
+
+            h3 {
+                color: white;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    font-size: 1.25em;
+                }    
+                
+                // Format mobile
+                @media (max-width: 768px){
+                    font-size: 1em;
+                }
+            }
+
+            button{
+                color: white;
+                width: 20%;
+                height: 5vh;
+                background-color: $background_button;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    width: 30%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 40%;
+                }
+            }
+
+        }
+        img {
+            width: 40%;
+            height: 40vh;
+            margin: auto;
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 50%;
+                height: 30vh;
+            }
+        }
+
+        
+    }
+
+    // Section 5
+    #section5 {
+        width: 100%;
+        height: 70vh;
+        margin: auto;   
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        // Format Tablette
+        @media (max-width: 992px){
+            width: 100%;
+            height: 110vh;
+        }
+        
+        // Format mobile
+        @media (max-width: 768px){
+            width: 100%;
+            height: 90vh;
+            }
+
+        
+        .background{
+            width: 34%;
+            height: 50vh;
+            background-image: url('./images/ourproduct.jpg');
+
+            // Format Tablette
+            @media (max-width: 992px){
+                width: 80%;
+                height: 80vh;
+            }
+
+            // Format mobile
+            @media (max-width: 768px){
+                width: 100%;
+                height: 70vh;
+            }
+        }
+
+                .box {
+                    background: #fff;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+                    width: 15%;
+                    margin: auto;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    right: 80%;
+                    top: 52%;
+
+                    // Format Tablette
+                    @media (max-width: 992px){
+                        width: 25%;
+                        left: 5%;
+                        top: 50%;
+                    }
+
+                    // Format mobile
+                    @media (max-width: 768px){
+                        width: 30%;
+                    }
+        
+                }
+
+        .product{
+
+            // Format Tablette
+            @media (max-width: 992px){
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 60%;
+            }
+
+            // Format mobile
+            @media (max-width: 768px){
+                display: flex;
+            }
+
+            h2 {
+                width: 80%;
+                color: #01996D;
+                font-size: 2.5em;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    font-size: 2em;
+                }
+            }
+
+            p{
+                width: 40%;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    width: 80%;
+                }
+            }
+
+            button{
+                color: white;
+                width: 20%;
+                height: 5vh;
+                background-color: $background_button;
+
+                // Format Tablette
+                @media (max-width: 992px){
+                    width: 30%;
+                }
+
+                // Format mobile
+                @media (max-width: 768px){
+                    width: 40%;
+                }
+            }
+    
+        }
+        
+    }
+
+    footer {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $background_footer;
+        @include footer;
+
+    }
+}
